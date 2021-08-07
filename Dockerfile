@@ -1,5 +1,4 @@
 FROM ubuntu:hirsute
-MAINTAINER Kirit Sælensminde
 
 ENV DEBIAN_FRONTEND noninteractive
 
