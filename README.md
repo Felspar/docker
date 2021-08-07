@@ -1,2 +1,3 @@
-# docker
-Dockerfiles for creating Docker images
+# Felspar Dockerfiles
+
+**Dockerfiles for creating Docker images**
