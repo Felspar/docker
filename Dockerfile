@@ -1,4 +1,4 @@
-FROM ubuntu:hirsute AS ubuntu-updated
+FROM ubuntu:jammy AS ubuntu-updated
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -13,6 +13,6 @@ RUN \
 FROM ubuntu-updated AS cpp
 
 RUN \
-    apt install -y build-essential cmake git ninja-build \
-            gcc clang-12 libc++-12-dev libc++abi-12-dev lld-12 && \
+    apt install -y build-essential cmake git ninja-build gcc \
+            clang libc++-dev libc++abi-dev lld liburing-dev && \
     apt clean
