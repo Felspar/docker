@@ -4,7 +4,6 @@
 
 
 ```bash
-docker build . && \
-    docker push kayess/ubuntu-updated && \
-    docker push kayess/cpp
+docker build . -t kayess/cpp && \
+        docker push kayess/cpp
 ```
