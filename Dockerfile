@@ -1,4 +1,4 @@
-FROM ubuntu:jammy AS ubuntu-updated
+FROM ubuntu:kinetic AS ubuntu-updated
 
 ENV DEBIAN_FRONTEND noninteractive
 
