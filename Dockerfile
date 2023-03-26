@@ -14,5 +14,6 @@ FROM ubuntu-updated AS cpp
 
 RUN \
     apt install -y build-essential cmake git ninja-build gcc \
-            clang libc++-dev libc++abi-dev lld liburing-dev && \
+            clang libc++-dev libc++abi-dev lld \
+            libssl-dev liburing-dev && \
     apt clean
