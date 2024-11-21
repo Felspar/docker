@@ -1,5 +1,6 @@
 FROM ubuntu:noble AS ubuntu-updated
 
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
@@ -9,11 +10,11 @@ RUN \
     apt clean
 
 
-
 FROM ubuntu-updated AS cpp
 
 RUN \
     apt install -y build-essential cmake git ninja-build gcc \
-            clang libc++-dev libc++abi-dev lld \
+            clang clang-tools libc++-dev libc++abi-dev lld \
             libssl-dev liburing-dev && \
-    apt clean
+    apt clean && \
+    ln -s /usr/bin/clang-scan-deps-18 /usr/bin/clang-scan-deps
