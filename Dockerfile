@@ -1,4 +1,4 @@
-FROM ubuntu:kinetic AS ubuntu-updated
+FROM ubuntu:noble AS ubuntu-updated
 
 ENV DEBIAN_FRONTEND noninteractive
 
